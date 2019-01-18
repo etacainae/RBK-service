@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <title>RBK service</title>
     <style>@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic');</style>
   </head>
@@ -17,17 +19,45 @@
     <header id="header">
      <div class="container">
        <div class="row">
-         <div class="col-6 logo">
+        <div class="col-2 mobil-link">
+          <span></span>
+        </div>
+        <div class="mobil-menu">
+          <ul>
+            <li><a href="#">
+              Ремонт техники
+            </a></li>
+            <li><a href="#">              
+              Магазин аксессуаров
+            </a></li>    
+            <li><a href="#">
+              Отзывы
+            </a></li>
+            <li><a href="#">
+              о компании
+            </a></li>
+            <li><a href="#">
+              гарантии
+            </a></li>
+            <li><a href="#">
+              акции
+            </a></li>
+            <li><a href="#">
+              Контакты
+            </a></li>
+          </ul>
+        </div>
+         <div class="col-xl-6 col-lg-6 col-12 logo">
            <img src="img/logo.png" alt="RBK service ремонт быстрого качества">
          </div>
-         <div class="col-4 contacts">
+         <div class="col-xl-4 col-lg-3 col-12 contacts">
            <div class="contacts-item">
              <div class="contacts-item-img">
                <img src="img/metro.png" alt="">
              </div>
              <p>
                м. Багратионовская<br>
-               +7(495)6707707
+               <a href="tel:7(495)6707707">+7(495)6707707</a>
              </p>
            </div>
            <div class="contacts-item">
@@ -36,11 +66,11 @@
              </div>
              <p>
                м. Мякинино<br>
-               +7(495)6707707
+               <a href="tel:7(495)6707707">+7(495)6707707</a>
              </p>
            </div>
          </div>
-         <div class="col-2 buttons">
+         <div class="col-xl-2 col-lg-3 col-12 buttons">
            <div class="buttons-item">
              <img src="img/icons/box.png" alt="">
              <p>
@@ -62,7 +92,7 @@
     <div class="fixed-menu">
       <div class="container">
         <div class="row fixed-menu__wrapper">
-          <div class="col-1 menu-search">
+          <div class="col-lg-1 menu-search">
             <a href="#" class="home">
               <img src="img/icons/home.png" alt="">
             </a>
@@ -70,7 +100,7 @@
               <img src="img/icons/search.png" alt="">
             </a>
           </div>
-          <div class="col-7 navbar-wrapper">
+          <div class="col-lg-8 col-xl-7 navbar-wrapper">
             <nav>
               <ul class="nav">
                 <li class="nav-item">
@@ -91,11 +121,11 @@
               </ul>
             </nav>
           </div>
-          <div class="col-2 account">
+          <div class="col-lg-2 account">
             <img src="img/icons/user.png" alt="Личный кабинет">
             <p>МОЙ КАБИНЕТ</p>
           </div>
-          <div class="col-2 basket">
+          <div class="col-lg-1 col-xl-2 basket">
             <img src="img/icons/cart.png" alt="Корзина">
             <p>
               Корзина<br>
@@ -121,11 +151,16 @@
           </div>
         </div>
         <div class="phone-infa row">
-          <div class="col-4 phone-infa__img">
+          <div class="mobil-phone-infa__title">
+            <h2>ремонт Iphone 7</h2>
+          </div>
+          <div class="col-lg-4 phone-infa__img">
             <img src="img/design_hero_large.png" alt="Iphone 7">
           </div>
-          <div class="col-8 phone-infa__text">
-            <h2>ремонт Iphone 7</h2>
+          <div class="col-lg-8 phone-infa__text">
+            <div class="phone-infa__title">
+              <h2>ремонт Iphone 7</h2>
+            </div>
             <div class="phone-infa__faults">
               <h3>Наиболее частые неисправности Iphone 7</h3>
               <ul>
@@ -153,7 +188,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-12 application-button phone-infa__application-button">
+          <div class="col-xl-12 application-button phone-infa__application-button">
             <a href="#">Онлайн заявка на ремонт 10% скидка </a>
           </div>
         </div>
@@ -268,40 +303,50 @@
         <div class="process">
           <h2>как происходит процесс ремонта</h2>
           <div class="row">
-            <div class="col-five process-item">
-              <img src="img/numbers/1.png" alt="">
+            <div class="col-xl-five process-item">
+              <div class="process-item__img">
+                <img src="img/numbers/1.png" alt="">
+              </div>
               <p>
                 Принимая технику, <br>
                 фиксируем все пожелания <br>
                 и нюансы
               </p>
             </div>
-            <div class="col-five process-item">
-              <img src="img/numbers/2.png" alt="">
+            <div class="col-xl-five process-item">
+              <div class="process-item__img">
+                <img src="img/numbers/2.png" alt="">
+              </div>
               <p>
                 Осуществляем <br>
                 быструю и тщательную <br>
                 диагностику
               </p>
             </div>
-            <div class="col-five process-item">
-              <img src="img/numbers/3.png" alt="">
+            <div class="col-xl-five process-item">
+              <div class="process-item__img">
+                <img src="img/numbers/3.png" alt="">
+              </div>
               <p>
                 Выполнение всех <br>
                 согласованных работ <br>
                 качественно и в срок
               </p>
             </div>
-            <div class="col-five process-item">
-              <img src="img/numbers/4.png" alt="">
+            <div class="col-xl-five process-item">
+              <div class="process-item__img">
+                <img src="img/numbers/4.png" alt="">
+              </div>
               <p>
                 Держим клиента <br>
                 в курсе хода ремонта <br>
                 и всегда на связи
               </p>
             </div>
-            <div class="col-five process-item">
-              <img src="img/numbers/5.png" alt="">
+            <div class="col-xl-five process-item">
+              <div class="process-item__img">
+                <img src="img/numbers/5.png" alt="">
+              </div>
               <p>
                 Заключительный <br>
                 анализ качества <br>
@@ -316,7 +361,7 @@
         <div class="payment">
           <h2>Варианты оплаты</h2>
           <div class="row">
-            <div class="col-3 payment-item">
+            <div class="col-xl-3 col-sm-6 col-lg-6 col-12 payment-item">
               <div class="payment-item__img">
                 <img src="img/icons/pay-1.png" alt="">
               </div>
@@ -326,7 +371,7 @@
                 volutpat justo. 
               </p>
             </div>
-            <div class="col-3 payment-item">
+            <div class="col-xl-3 col-sm-6 col-lg-6 col-12 payment-item">
               <div class="payment-item__img">
                 <img src="img/icons/pay-2.png" alt="">
               </div>
@@ -335,7 +380,7 @@
                 Вы можете оплатить  картами<br> Visa/MasterCard или в кассе<br> отделения любого банка (при<br> переводе необходимо будет <br>оплатить комиссию)
               </p>
             </div>
-            <div class="col-3 payment-item">
+            <div class="col-xl-3 col-sm-6 col-lg-6 col-12 payment-item">
               <div class="payment-item__img">                
                <img src="img/icons/pay-3.png" alt="">
               </div>
@@ -345,7 +390,7 @@
                 (взымается комиссия)
               </p>
             </div>
-            <div class="col-3 payment-item">
+            <div class="col-xl-3 col-sm-6 col-lg-6 col-12 payment-item">
               <div class="payment-item__img">
                 <img src="img/icons/pay-4.png" alt="">
               </div>
@@ -395,19 +440,19 @@
     <footer id="footer">
      <div class="container">
        <div class="row">
-         <div class="col-2 footer-item">
+         <div class="col-lg-2 col-sm-4 footer-item">
            <h4>ИНФОРМАЦИЯ</h4>
            <a href="#">Новости</a>
            <a href="#">О компании</a>
            <a href="#">О нас и для Вас</a>
          </div>
-         <div class="col-2 footer-item">
+         <div class="col-lg-2 col-sm-4 footer-item">
            <h4>СЕРВИСЫ</h4>
            <a href="#">текст</a>
            <a href="#">текст</a>
            <a href="#">текст</a>
          </div>
-         <div class="col-2 footer-item">
+         <div class="col-lg-2 col-sm-4 footer-item">
            <h4>ЗАПЧАСТИ</h4>
            <a href="#">Для Apple</a>
            <a href="#">Для телефонов</a>
@@ -415,7 +460,7 @@
            <a href="#">Для ноутбуков</a>
            <a href="#">Для фотоаппаратов</a>
          </div>
-         <div class="col-4 footer-item">
+         <div class="col-lg-4 col-sm-6 footer-item">
            <h4>АКСЕССУАРЫ</h4>
            <a href="#">Чехлы</a>
            <a href="#">Кабели, переходники</a>
@@ -427,7 +472,7 @@
            <a href="#">Док станции, селфи палки</a>
            <a href="#">Портативная акустика</a>
          </div>
-         <div class="col-2 footer-item">
+         <div class="col-lg-2 col-sm-6 footer-item">
            <h4>КОНТАКТЫ</h4>
            <a href="#">
              м. Багратионовская, <br>
@@ -445,12 +490,27 @@
        </div>
      </div>
     </footer>
+    <script>
+      $(document).ready(function(){
+        var link = $('.mobil-link');
+        var link_active = $('.mobil-link_active');
+        var menu = $('.mobil-menu');
+        var nav_link = $('.mobil-menu li');
 
+        link.click(function(){
+          link.toggleClass('mobil-link_active');
+          menu.toggleClass('mobil-menu_active');
+        });
+        nav_link.click(function(){
+          link.toggleClass('mobil-link_active');
+          menu.toggleClass('mobil-menu_active');
+        });
+      });        
+    </script>
 
     
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
