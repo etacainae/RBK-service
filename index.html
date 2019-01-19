@@ -19,7 +19,7 @@
     <header id="header">
      <div class="container">
        <div class="row">
-        <div class="col-2 mobil-link">
+        <div class="mobil-link">
           <span></span>
         </div>
         <div class="mobil-menu">
@@ -154,7 +154,7 @@
           <div class="mobil-phone-infa__title">
             <h2>ремонт Iphone 7</h2>
           </div>
-          <div class="col-lg-4 phone-infa__img">
+          <div class="col-lg-4 col-12 phone-infa__img">
             <img src="img/design_hero_large.png" alt="Iphone 7">
           </div>
           <div class="col-lg-8 phone-infa__text">
@@ -506,6 +506,15 @@
           menu.toggleClass('mobil-menu_active');
         });
       });        
+    </script>
+    <script>
+      let btn = document.querySelector('.mobil-link');
+        window.onscroll = button;
+        function button() {
+            if (window.pageYOffset > 60) {
+            btn.style.opacity = '1';
+          }else { btn.style.opacity = '0'; }
+      } 
     </script>
 
     

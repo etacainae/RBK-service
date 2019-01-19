@@ -1,8 +1,21 @@
+@media screen and (max-width: 470px) {
+  .logo img {
+    width: 90% !important;
+    height: auto !important;
+  }
+  .buttons {
+    flex-direction: column !important;
+  }
+  .advantages-wrapper li {
+    padding-top: 35px !important;
+  }
+}
 @media screen and (max-width: 959px) {
   .fixed-menu {
     display: none;
   }
   .mobil-link {
+    opacity: 0;
     cursor: pointer;
     transition: all 0.5s;
     left: 20px;
@@ -87,20 +100,6 @@
   .process-item img {
     margin-left: 10px !important;
   }
-}
-@media screen and (max-width: 470px) {
-  .logo img {
-    width: 90% !important;
-    height: auto !important;
-  }
-  .buttons {
-    flex-direction: column !important;
-  }
-  .advantages-wrapper li {
-    padding-top: 35px !important;
-  }
-}
-@media screen and (max-width: 959px) {
   .logo {
     text-align: center;
   }
@@ -125,6 +124,9 @@
   .mobil-phone-infa__title {
     display: block !important;
     margin-bottom: 20px;
+  }
+  .phone-infa__img img {
+    max-width: 100% !important;
   }
   .phone-infa__title {
     display: none !important;
