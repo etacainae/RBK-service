@@ -1,0 +1,25 @@
+.title {
+  color: #262626;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.application-button {
+  cursor: pointer;
+  margin: 0 auto;
+  max-width: 500px;
+  height: 30px;
+  -webkit-box-shadow: 0 0 7px 1px rgba(28, 77, 121, 0.94);
+          box-shadow: 0 0 7px 1px rgba(28, 77, 121, 0.94);
+  background-color: #235d91;
+  text-align: center;
+}
+.application-button a {
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+}
