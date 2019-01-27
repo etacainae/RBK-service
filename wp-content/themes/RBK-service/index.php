@@ -398,13 +398,8 @@
         var link = $('.mobil-link');
         var link_active = $('.mobil-link_active');
         var menu = $('.mobil-menu');
-        var nav_link = $('.mobil-menu li');
 
         link.click(function(){
-          link.toggleClass('mobil-link_active');
-          menu.toggleClass('mobil-menu_active');
-        });
-        nav_link.click(function(){
           link.toggleClass('mobil-link_active');
           menu.toggleClass('mobil-menu_active');
         });

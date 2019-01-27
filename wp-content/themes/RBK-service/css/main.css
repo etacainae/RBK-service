@@ -543,11 +543,13 @@ body {
 }
 .mobil-link {
   display: none;
+  z-index: 91;
 }
 .mobil-menu {
   left: -200vw;
   position: fixed;
   max-width: 100%;
+  z-index: 91;
 }
 .logo {
   padding-top: 5px;
@@ -1095,7 +1097,7 @@ body {
 }
 .overlay {
   display: none;
-  z-index: 100;
+  z-index: 90;
   position: fixed;
   background-color: #000;
   opacity: 0.8;
