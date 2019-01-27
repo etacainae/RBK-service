@@ -24,30 +24,9 @@
         <div class="mobil-link">
           <span></span>
         </div>
+        
         <div class="mobil-menu">
-          <ul>
-            <li><a href="#">
-              Ремонт техники
-            </a></li>
-            <li><a href="#">              
-              Магазин аксессуаров
-            </a></li>    
-            <li><a href="#">
-              Отзывы
-            </a></li>
-            <li><a href="#">
-              о компании
-            </a></li>
-            <li><a href="#">
-              гарантии
-            </a></li>
-            <li><a href="#">
-              акции
-            </a></li>
-            <li><a href="#">
-              Контакты
-            </a></li>
-          </ul>
+          <?php wp_nav_menu( array( 'theme_location' => 'max_mega_menu_1'  ) ); ?>
         </div>
          <div class="col-xl-6 col-lg-6 col-12 logo">
            <?php 
@@ -109,25 +88,7 @@
             </a>
           </div>
           <div class="col-lg-8 col-xl-7 navbar-wrapper">
-            <nav>
-              <ul class="nav">
-                <li class="nav-item">
-                  <a href="#">РЕМОНТ</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#">АКСЕССУАРЫ</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#">ЗАПЧАСТИ</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#">О НАС И ДЛЯ ВАС</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#">КОНТАКТЫ</a>
-                </li>
-              </ul>
-            </nav>
+            <?php wp_nav_menu( array( 'theme_location' => 'max_mega_menu_1'  ) ); ?>
           </div>
           <div class="col-lg-2 account">
             <img src="<?php echo get_template_directory_uri(); ?>/img/icons/user.png" alt="Личный кабинет">
@@ -193,64 +154,6 @@
             <p>ЦЕНА</p>
           </div>
           <?php the_field('прайс_неисправностей'); ?>
-          <ul>
-            <li>
-              <p>Диагностика</p>
-              <p>Бесплатно</p>
-            </li>
-            <li>
-              <p>Замена LCD (Дисплея)</p>
-              <p>14000</p>
-            </li>
-            <li>
-              <p>Замена корпуса</p>
-              <p>8500</p>
-            </li>
-            <li>
-              <p>Замена АКБ (аккумулятора)</p>
-              <p>3000</p>
-            </li>
-            <li>
-              <p>Замена переденей камеры</p>
-              <p>4000</p>
-            </li>
-            <li>
-              <p>Замена задней камеры</p>
-              <p>4000</p>
-            </li>
-            <li>
-              <p>Сим лоток</p>
-              <p>1300</p>
-            </li>
-            <li>
-              <p>Замена слухового динамика</p>
-              <p>2600</p>
-            </li>
-            <li>
-              <p>Замена Полифонического Динамика (Звонок)</p>
-              <p>2600</p>
-            </li>
-            <li>
-              <p>Замена шлейфа зарядки</p>
-              <p>3200</p>
-            </li>
-            <li>
-              <p>Замена шлейфа включения и громкости</p>
-              <p>3200</p>
-            </li>
-            <li>
-              <p>Замена шлейфа ушного динамика</p>
-              <p>4000</p>
-            </li>
-            <li>
-              <p>Замена шлейфа на аудио гарнитуру</p>
-              <p>3200</p>
-            </li>
-            <li>
-              <p>Замена кнопки Home (восстановление)</p>
-              <p>3500</p>
-            </li>
-          </ul>
         </div>     
       </div>
      <!-- ----------------- container end ------------------ -->
@@ -423,11 +326,6 @@
         <div class="container">
           <p>
             <?php the_field('lorem-text'); ?>
-<!--             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis quam neque. Pellentesque quis convallis ante. Proin at volutpat justo. Vestibulum faucibus nec nisl et viverra. Nam <br>ut facilisis enim, eget laoreet eros. Nunc posuere, dolor id porttitor ultrices, ligula sapien ornare elit, vel varius purus lorem non tellus. Suspendisse molestie, augue ac sagittis porta, eros velit vehicula nulla, ac tempor massa lacus id enim. Duis semper enim at porttitor viverra. Suspendisse nisi dui, malesuada non dictum ut, molestie quis mauris. Fusce pretium placerat vestibulum. Phasellus quis felis iaculis, malesuada quam sed, rutrum lectus.
-            <br><br>
-            Duis nisl diam, pulvinar non iaculis ac, porttitor accumsan ipsum. Vestibulum consectetur leo a ante blandit tempor. Vivamus dictum sem eget tempus rutrum. Pellentesque velit quam, dignissim in risus ut, rhoncus scelerisque justo. Etiam in facilisis arcu. Sed imperdiet sed nulla non porta. Proin auctor, tortor quis viverra dignissim, lacus lorem cursus diam, non tempus nibh massa sed sem. Morbi cursus rutrum arcu quis vulputate. Quisque mattis scelerisque tortor, vel rutrum enim elementum sed. Donec ultrices nulla erat, eget sollicitudin magna congue eget.
-            <br><br>
-            Curabitur sed blandit nisl, vel semper dui. Nunc at condimentum quam. Nam ultricies mi non arcu suscipit, in laoreet nisl tincidunt. Donec mollis, urna a porttitor blandit, elit erat semper urna, quis pulvinar ipsum tortor sit amet dolor. Praesent condimentum ante nec eros interdum lacinia. Integer ac lorem non lacus ornare faucibus in sed lacus. Aliquam erat volutpat. Cras tempus felis magna, vitae dapibus magna ultricies vitae. Donec fringilla maximus viverra. Morbi malesuada, nisi at ullamcorper luctus, sapien lacus hendrerit odio, ut semper nisl urna nec orci. Ut tristique scelerisque faucibus. In purus lorem, sodales eu leo nec, rutrum luctus est. Duis volutpat diam quis ex finibus, ut sollicitudin odio vestibulum. Aliquam cursus non lorem ac hendrerit. Quisque augue est, vulputate ac nibh sit amet, volutpat placerat nisi. Maecenas maximus rhoncus mattis. Class aptent taciti sociosqu ad <br>litora torquent per conubia nostra, per inceptos himenaeos. Nunc consequat dui eu ultrices imperdiet.  -->
           </p>
         </div>
       </div>
@@ -527,22 +425,25 @@
         var form = $('.modal-window');
         var overlay = $('.overlay');
         var close = $('.close');
+        var body = $('body');
 
         button.click(function(){
           form.css("display", "block");
           overlay.css("display", "block");
+          body.css("overflow", "hidden");
         });
         close.click(function(){
           form.css("display", "none");
           overlay.css("display", "none");
+          body.css("overflow", "scroll");
         });
         overlay.click(function(){
           form.css("display", "none");
           overlay.css("display", "none");
+          body.css("overflow", "scroll");
         });
       });
     </script>
-
     
     <!-- Optional JavaScript -->
     

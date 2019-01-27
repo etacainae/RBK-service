@@ -15,10 +15,16 @@
   .advantages-wrapper li {
     padding-top: 25px !important;
   }
+  .modal-window .close {
+    left: -20px !important;
+  }
 }
 @media screen and (max-width: 959px) {
   .fixed-menu {
     display: none;
+  }
+  .mega-menu-item {
+    width: 100% !important;
   }
   .mobil-link {
     opacity: 0;
@@ -115,6 +121,9 @@
   .mobil-menu_active a {
     color: #fff;
     text-decoration: none;
+  }
+  .mega-sub-menu {
+    width: 100% !important;
   }
   .process-item img {
     margin-left: 10px !important;
@@ -342,6 +351,9 @@
   .fixed-menu {
     font-size: 14px !important;
   }
+  .fixed-menu .mega-menu-link {
+    font-size: 14px !important;
+  }
   .menu-search {
     margin-right: 0px !important;
     margin-left: 0px !important;
@@ -409,5 +421,16 @@
   }
   .reverse-form form {
     margin-left: 60px !important;
+  }
+  .contact-form_wrapper {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+  }
+  .contact-form_wrapper span {
+    font-weight: 400;
+    font-size: 14px;
   }
 }
